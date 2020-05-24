@@ -167,15 +167,15 @@ def player_numbers (team_name)
   end
 end
 
-#def player_stats (name)
-#  game_hash.values.each do |team|
-#    team[:players].each do |player|
-#      if player[:player_name] == name
-#        return player
-#      end
-#    end
-#  end
-#end
+def player_stats (name)
+  game_hash.values.each do |team|
+    team[:players].each do |player|
+      if player[:player_name] == name
+        return player
+      end
+    end
+  end
+end
 
 #def big_shoe_rebounds 
 #  big_shoe = 0 
