@@ -159,13 +159,13 @@ def team_names
   game_hash.values.map {|name| name[:team_name]}
 end
 
-#def player_numbers (team_name)
-#  game_hash.values.each do |team|
-#    if team[:team_name] == team_name
-#      return team[:players].map {|player| player[:number]}
-#    end
-#  end
-#end
+def player_numbers (team_name)
+  game_hash.values.each do |team|
+    if team[:team_name] == team_name
+      return team[:players].map {|player| player[:number]}
+    end
+  end
+end
 
 #def player_stats (name)
 #  game_hash.values.each do |team|
